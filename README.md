@@ -6,13 +6,40 @@ At Dailyhunt, we want to identify named-entities like names, locations, organisa
 
 
 ### Data Files
-* Sample Train Data File => sample_train_data.tsv.gz
-* Cased NERs output => sample_english_news.out.limited
-* Sample Model output => penglish_sample_news.tsv
-* All possible NERs for benchmark files => all_possible_ner_set.txt
-* benchmark_file1.tsv => Model outputs batch 1
-* benchmark_file11.tsv => Model outputs batch 2
-* Reference wikipedia titles for given validation set => all_possible_wiki_title_matches.txt 
-* benchmark outputs for all models => benchmark_file_222.tsv, TAB separated and sequence is as follows
+* Sample Train Data File
 
-text, actual_ner_list, model_ner_list, stanford_ner_list, spacy_ner_list, flair_ner_list
+    => FILE : sample_train_data.tsv.gz
+    
+* Cased NERs output
+
+    => FILE : sample_english_news.out.limited
+
+* Sample Model output 
+
+    => FILE : english_sample_news.tsv
+    
+* All possible NERs for benchmark files 
+
+    => all_possible_ner_set.txt
+    
+* Models Output Counts 
+
+    => FILE : benchmark_file1.tsv, benchmark_file11.tsv
+    
+    => TAB Separated
+    
+    => COLUMNS : text, actual_ner_count, curr_model_match, curr_model_count_total, curr_stanford_match, curr_stanford_count_total, curr_spacy_match, curr_spacy_count_total, curr_flair_match, curr_flair_count_total
+    
+* Reference wikipedia titles for given validation set 
+
+    => all_possible_wiki_title_matches.txt 
+    
+* Benchmark outputs for all models
+    
+    => benchmark_file_222.tsv
+    
+    => TAB separated
+
+    => COLUMNS : text, actual_ner_list, model_ner_list, stanford_ner_list, spacy_ner_list, flair_ner_list
+    
+    
