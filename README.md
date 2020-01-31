@@ -4,7 +4,7 @@
 For a news content distribution platform, Named Entity Recognition is a pivotal task for building better user recommendation and notification algorithms. Apart from identifying names, locations, organisations from the news for 13+ Indian languages and use them in  algorithms, we also need to identify n-grams which do not necessarily fit in the definition of Named-Entity, yet important. For example, "me too movement", "beef ban", "alwar mob lynching". In this exercise, given an English language text, we are trying to detect case-less names, locations, organisations and important n-grams  which convey important information and can be used as topics and/or hashtags. Model built using Wikipedia titles data, private English news corpus and BERT-Multilingual pre-trained model, Bi-GRU and CRF architecture, shows promising results when compared with industry best Flair, Spacy and Stanford-caseless-NER.
 
 ### Metrics on Validation Set
-<img src="./metrics.png" height="300" width="400">
+<img src="./metrics.png" height="300" width="350">
 
 ### Example 1
 <img src="./example_1.png" height="300" width="700">
